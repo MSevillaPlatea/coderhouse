@@ -1,0 +1,45 @@
+html {
+    font-size: 30px;
+}
+
+.p2 {
+    color: white;
+    font-size: 1rem;
+    word-spacing: 20px;
+    line-height: 150%;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'K2D', sans-serif;
+}
+
+h1 {
+    /*  font-style: italic;*/
+    font-family: 'K2D', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2em;
+    text-align: center;
+    float: none;
+}
+
+section p em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+header nav ul li a {
+    color: red;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+nav ul {
+    list-style: square;
+}
+
+
+/*
+section p {
+    color: red !important;
+}*/

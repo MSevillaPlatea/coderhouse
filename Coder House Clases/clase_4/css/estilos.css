@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.position_relative div {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(57, 151, 57);
+    position: relative;
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+}
+
+.position_absolut {
+    height: 400px;
+    width: 100%;
+    border: solid black 5px;
+    position: relative;
+}
+
+.position_absolut div {
+    background-color: blue;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: calc(50% - 75px);
+    bottom: calc(50% - 75px);
+}
+
+.position_fixed div {
+    height: 100px;
+    background-color: darkgoldenrod;
+    width: 100px;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.position_fixed div i {
+    font-size: 2em;
+    position: absolute;
+    right: calc(50% - 0.5em);
+    bottom: calc(50% - 0.5em);
+    color: white;
+}
+
+.position_sticky {
+    position: sticky;
+    text-align: center;
+    padding: 20px;
+    background: yellowgreen;
+    top: 0;
+    z-index: 1;
+}

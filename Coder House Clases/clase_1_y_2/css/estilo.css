@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5%;
+}
+
+fieldset {
+    width: 350px;
+    text-align: left;
+    margin-left: 30%;
+}
+
+fieldset input {
+    margin: 5px;
+}
+
+fieldset p {
+    margin: 5px;
+}

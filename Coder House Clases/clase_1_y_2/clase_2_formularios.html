@@ -1,0 +1,88 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FORMULARIOS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="estilo.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <form id="formulario_prueba" action="receptor_form.html">
+        <fieldset>
+            <legend>datos personales</legend>
+            <div>
+                <label>
+                <p>nombre</p>
+            <input type="text" name="nombre" placeholder="tu nombre carajo" required>
+             </label>
+            </div>
+            <div>
+                <label>
+            <p>pass</p>
+                <input type="password" name="pass" placeholder="la contraseña papa">
+             </label>
+            </div>
+            <div>
+                <label>
+                <p>edad:</p>
+            <input type="number" name="edad" max="100" min="1">
+        </label>
+            </div>
+            <div>
+                <label>
+                <p>correo</p>
+            <input type="email" name="correo" placeholder="tu correo">
+        </label>
+            </div>
+            <div>
+                <p>comentarios</p>
+                <textarea name="comentario" id="" cols="30" rows="10" placeholder="aca tu comentario"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>datos de compra</legend>
+            <div>
+                <label for="aceptar_terminos">
+                <p>terminos</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat recusandae, eaque vel laudantium error maiores a porro libero tempora distinctio quia similique pariatur, sequi minima, quaerat temporibus debitis deleniti illum.</p>
+            <input type="checkbox" name="aceptar" id="aceptar_terminos"> aceptas la puta madre????!!!
+            </label>
+            </div>
+            <div>
+                <p>elegi uno, solo UNO!!</p>
+                <label><input type="radio" name="eleccion" value="1" checked>1</label>
+                <label><input type="radio" name="eleccion" value="2">2</label>
+                <label><input type="radio" name="eleccion" value="3">3</label>
+                <label><input type="radio" name="eleccion" value="4">56</label>
+            </div>
+            <div>
+                <p>elegi color</p>
+                <input type="color" name="color">
+            </div>
+            <div>
+                <p>pais</p>
+                <select name="pais">
+                    <option value="arg">argentina</option>
+                    <option value="br">brasil</option>
+                    <option value="uru">urugual</option>
+                    <option value="bul">bulgaria</option>
+                </select>
+
+            </div>
+        </fieldset>
+        <input type="submit" value="enviar el formulariooooo">
+        <!-- <div>
+            <button form="formulario_prueba"> 
+                <h1>enviar formulario</h1>
+            </button>
+        </div>
+    -->
+
+    </form>
+</body>
+
+</html>

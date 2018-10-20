@@ -1,0 +1,37 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>audio y video</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="estilo.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!-- cuando se tiene un solo formato  -->
+    <audio src="test.mp3" controls autoplay loop></audio>
+    <!--cuando se tiene varios formatos-->
+
+
+    <audio>
+
+        <source src="audio.mp3" type="audio/mpeg">
+            <source src="audio.ogg" type="audio/ogg">
+                <p>formato no soportado</p>
+                
+    </audio>
+
+    <video src="video.mp4" controls autoplay loop></video>
+
+
+    <div style=" width: 300px; height: 200px; position:fixed;"><iframe src="https://player.vimeo.com/video/292251793?color=8c754d&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kLwKHcJPFdQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+</body>
+
+</html>
