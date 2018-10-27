@@ -18,10 +18,13 @@ header {
 
 header nav {
     float: right;
+    margin: 10px;
+    /* display: inline-block; */
 }
 
 header h1 {
     display: inline-block;
+    text-align: center;
 }
 
 header nav ul li {

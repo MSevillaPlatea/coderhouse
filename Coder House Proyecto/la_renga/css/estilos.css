@@ -3,6 +3,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+}
+
+@keyframes escalar {
+    from {
+        transform: scale(1)
+    }
+    to {
+        transform: scale(1.2)
+    }
 }
 
 h2,
@@ -25,16 +35,17 @@ header {
     width: 100%;
 }
 
-header ul {
-    background-color: black;
-    list-style: none;
-    position: fixed;
-    width: 100%;
-    text-align: center;
+header h1 {
+    font-size: 50px;
+    color: white;
+    font-family: 'Rock Salt', cursive;
+    margin-left: 30px;
 }
 
-header ul li:hover {
-    transform: scale(1.1)
+header ul {
+    list-style: none;
+    width: 100%;
+    text-align: center;
 }
 
 header ul li {
@@ -44,6 +55,7 @@ header ul li {
 }
 
 header ul a {
+    font-family: 'Rock Salt', cursive;
     font-size: 1em;
     color: white;
     text-decoration: none;
@@ -51,18 +63,81 @@ header ul a {
 }
 
 
-/* que el menu 2 este sticky cuando llegas a el */
+/* menu estrella */
 
-.menu_2_contenedor {
-    background-color: red;
+.int a {
     position: absolute;
-    bottom: 30px;
+    top: 8%;
+    left: 50%;
+}
+
+.his a {
+    position: absolute;
+    top: 22%;
+    left: 28%;
+}
+
+.ev a {
+    position: absolute;
+    top: 72%;
+    left: 28%;
+}
+
+.you a {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+}
+
+.con a {
+    position: absolute;
+    top: 48%;
+    left: 69%;
+}
+
+
+/* menu barra */
+
+#integrantes .escondite_menu {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    z-index: 2;
+    margin-bottom: -50px;
+    position: absolute;
+}
+
+#integrantes .menu_1 {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+#integrantes .menu_1 ul li {
+    background-color: black;
+    display: inline-block;
+    margin: 15px 25px;
+}
+
+#integrantes .menu_1 ul li:hover {
+    transform: scale(1.1);
+    animation-name: escalar;
+    animation-duration: 0.3s;
+}
+
+#integrantes .menu_1 a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
 }
 
 
 /* seccion central */
 
-#integrantes {
+
+/* #integrantes {
     padding-top: 40px;
 }
 
@@ -78,12 +153,13 @@ header ul a {
     border-width: 5px;
     list-style: none;
     width: 22%;
-    /* display: inline-block; */
+    display: inline-block;
     float: left;
-    /* border: 2px gray; */
+    border: 2px gray;
     margin: 10px 10px 20px;
     padding: 5px;
 }
+ */
 
 #historia {
     background-image: url("https://i.ytimg.com/vi/UeeG74FDjBw/maxresdefault.jpg");
