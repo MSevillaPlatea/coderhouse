@@ -98,16 +98,16 @@ header ul a {
 
 /* menu barra */
 
-#integrantes .escondite_menu {
+.escondite_menu {
     height: 50px;
     width: 100%;
-    background-color: black;
+    background-color: rgb(255, 0, 0);
     z-index: 2;
-    margin-bottom: -50px;
     position: absolute;
+    bottom: 0;
 }
 
-#integrantes .menu_1 {
+.menu_1 {
     background-color: black;
     width: 100%;
     text-align: center;
@@ -115,19 +115,19 @@ header ul a {
     top: 0;
 }
 
-#integrantes .menu_1 ul li {
+.menu_1 ul li {
     background-color: black;
     display: inline-block;
     margin: 15px 25px;
 }
 
-#integrantes .menu_1 ul li:hover {
+.menu_1 ul li:hover {
     transform: scale(1.1);
     animation-name: escalar;
     animation-duration: 0.3s;
 }
 
-#integrantes .menu_1 a {
+.menu_1 a {
     text-decoration: none;
     color: white;
     text-transform: uppercase;

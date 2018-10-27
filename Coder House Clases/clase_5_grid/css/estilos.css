@@ -1,0 +1,103 @@
+section.primero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 100px;
+    grid-template-rows: 120px 80px;
+    grid-gap: 20px;
+    grid-template-areas: "c1 c2 c3" "c4 c4 c4";
+}
+
+section.uno {
+    grid-area: c1;
+}
+
+section.dos {
+    grid-area: c2;
+}
+
+section.tres {
+    grid-area: c3;
+}
+
+section.cuatro {
+    grid-area: c4;
+}
+
+section.segundo {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 20px;
+    grid-template-areas: "c5 c5 c6" "c5 c5 c6" "c7 c8 c9"
+}
+
+section.cinco {
+    grid-area: c5;
+}
+
+section.seis {
+    grid-area: c6;
+}
+
+section.siete {
+    grid-area: c7;
+}
+
+section.ocho {
+    grid-area: c8;
+}
+
+section.nueve {
+    grid-area: c9;
+}
+
+section div {
+    background-color: blue;
+}
+
+section.tercero {
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 10px;
+    grid-template-areas: "c10 c11 c11 c11 c12 c12" "c13 c11 c11 c11 c14 c14" "c15 c16 c17 c17 c18 c19"
+}
+
+.diez {
+    grid-area: c10;
+}
+
+.once {
+    grid-area: c11;
+}
+
+.doce {
+    grid-area: c12;
+}
+
+.trece {
+    grid-area: c13;
+}
+
+.catorce {
+    grid-area: c14;
+}
+
+.quince {
+    grid-area: c15;
+}
+
+.dieciseis {
+    grid-area: c16;
+}
+
+.diecisiete {
+    grid-area: c17;
+}
+
+.dieciocho {
+    grid-area: c18;
+}
+
+.diecinueve {
+    grid-area: c19;
+}
