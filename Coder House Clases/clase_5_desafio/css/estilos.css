@@ -10,6 +10,19 @@ html {
     font-size: 10px;
 }
 
+h1,
+h2,
+h3,
+a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+section {
+    padding: 30px 0;
+}
+
 .contenedor {
     width: 90%;
     margin: auto;
@@ -25,26 +38,14 @@ header nav {
     background-color: blueviolet;
 }
 
-header nav h1 a {
-    color: white;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-header nav div.contenedor h1 a {
-    text-align: center;
-    color: black;
-}
-
 header h2 {
     text-align: center;
-    color: aqua;
-    text-transform: uppercase;
+    margin-top: 50px;
 }
 
 header nav .contenedor {
     display: flex;
+    justify-content: center;
 }
 
 header nav ul {
@@ -59,19 +60,132 @@ section.historia {
 section h2 {
     text-align: center;
     margin-bottom: 30px;
-    text-transform: uppercase;
-    color: red;
 }
 
 section.historia img {
     display: none;
 }
 
-section article p {
+section.historia article h3 {
+    margin-bottom: 15px;
+}
+
+section.historia article p {
     color: blue;
     line-height: 140%;
+    font-size: 1rem;
 }
 
 section.galeria {
     background-color: darkorchid;
+}
+
+section.galeria ul {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: repeat(5, 80px);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+section.galeria ul li {
+    background: url('https://aforisticamente.com/wp-content/uploads/2016/12/paisaje1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background-color: rgb(46, 31, 61);
+    padding: 20px 0;
+}
+
+footer ul {
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+@media screen and (min-width: 1025px) {
+    body {
+        display: grid;
+        grid-template-rows: 100vh repeat(4, auto);
+    }
+    h1,
+    h2,
+    h3,
+    a {
+        font-size: 2rem;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+    }
+    header h2 {
+        align-self: center;
+        font-size: 2.5rem;
+    }
+    header nav {
+        padding: 20px 0;
+        position: fixed;
+        width: 100%;
+    }
+    header nav ul {
+        display: block;
+    }
+    header nav .contenedor {
+        justify-content: space-between;
+        align-items: center;
+    }
+    header nav h1 a {
+        font-size: 2rem;
+    }
+    section.historia img {
+        display: block;
+        margin-right: 20px;
+    }
+    section.historia .contenedor div {
+        display: flex;
+    }
+    section.historia .contenedor div article p {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+    section.galeria ul {
+        grid-template-columns: repeat(2, 100px) 200px repeat(2, 100px);
+        grid-template-rows: repeat(3, 100px);
+        grid-template-areas: "c1 c2 c2 c3 c3" "c4 c2 c2 c5 c5" "c6 c7 c8 c9 c10"
+    }
+    section.galeria ul li.uno {
+        grid-area: c1;
+    }
+    section.galeria ul li.dos {
+        grid-area: c2;
+    }
+    section.galeria ul li.tres {
+        grid-area: c3;
+    }
+    section.galeria ul li.cuatro {
+        grid-area: c4;
+    }
+    section.galeria ul li.cinco {
+        grid-area: c5;
+    }
+    section.galeria ul li.seis {
+        grid-area: c6;
+    }
+    section.galeria ul li.siete {
+        grid-area: c7;
+    }
+    section.galeria ul li.ocho {
+        grid-area: c8;
+    }
+    section.galeria ul li.nueve {
+        grid-area: c9;
+    }
+    section.galeria ul li.diez {
+        grid-area: c10;
+    }
 }
