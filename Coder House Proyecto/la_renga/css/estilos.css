@@ -3,16 +3,39 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    z-index: 1;
+    list-style: none;
+    z-index: 0;
 }
 
+
+/*
+ * ────────────────────────────────────────────────────────────── I ──────────
+ *   :::::: A N I M A C I O N E S : :  :   :    :     :        :          :
+ * ────────────────────────────────────────────────────────────────────────
+ */
+
 @keyframes escalar {
-    from {
+    0% {
         transform: scale(1)
     }
-    to {
-        transform: scale(1.2)
+    50% {
+        transform: scale(1.1)
     }
+    100% {
+        transform: scale(1)
+    }
+}
+
+
+/*
+ * ────────────────────────────────────────────────────────── I ──────────
+ *   :::::: E L E M E N T O S : :  :   :    :     :        :          :
+ * ────────────────────────────────────────────────────────────────────
+ */
+
+body {
+    width: 100%;
+    margin: auto;
 }
 
 h2,
@@ -23,7 +46,11 @@ h3 {
 }
 
 
-/* seccion superior */
+/*
+ * ──────────────────────────────────────────────────────────── I ──────────
+ *   :::::: N A V E G A C I O N : :  :   :    :     :        :          :
+ * ──────────────────────────────────────────────────────────────────────
+ */
 
 header {
     background-color: black;
@@ -32,7 +59,6 @@ header {
     background-repeat: no-repeat;
     background-position: top center;
     height: 100vh;
-    width: 100%;
 }
 
 header h1 {
@@ -44,7 +70,6 @@ header h1 {
 
 header ul {
     list-style: none;
-    width: 100%;
     text-align: center;
 }
 
@@ -62,8 +87,20 @@ header ul a {
     text-transform: uppercase;
 }
 
+.escondite_menu {
+    height: 50px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
 
-/* menu estrella */
+
+/*
+ * ──────────────────────────────────────────────────────────────────── I ──────────
+ *   :::::: M E N U   P R I N C I P A L : :  :   :    :     :        :          :
+ * ──────────────────────────────────────────────────────────────────────────────
+ */
 
 .int a {
     position: absolute;
@@ -96,23 +133,19 @@ header ul a {
 }
 
 
-/* menu barra */
-
-.escondite_menu {
-    height: 50px;
-    width: 100%;
-    background-color: rgb(255, 0, 0);
-    z-index: 2;
-    position: absolute;
-    bottom: 0;
-}
+/*
+ * ────────────────────────────────────────────────────────────────── I ──────────
+ *   :::::: M E N U   F L O T A N T E : :  :   :    :     :        :          :
+ * ────────────────────────────────────────────────────────────────────────────
+ */
 
 .menu_1 {
     background-color: black;
-    width: 100%;
-    text-align: center;
     position: sticky;
     top: 0;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
 }
 
 .menu_1 ul li {
@@ -124,7 +157,7 @@ header ul a {
 .menu_1 ul li:hover {
     transform: scale(1.1);
     animation-name: escalar;
-    animation-duration: 0.3s;
+    animation-duration: 0.5s;
 }
 
 .menu_1 a {
@@ -134,10 +167,13 @@ header ul a {
 }
 
 
-/* seccion central */
+/*
+ * ────────────────────────────────────────────────────────────────────── I ──────────
+ *   :::::: S E C C I O N   C E N T R A L : :  :   :    :     :        :          :
+ * ────────────────────────────────────────────────────────────────────────────────
+ */
 
-
-/* #integrantes {
+#integrantes {
     padding-top: 40px;
 }
 
@@ -148,17 +184,24 @@ header ul a {
     margin: 15px 1px;
 }
 
+#integrantes ul {
+    margin: 0px auto;
+}
+
 #integrantes ul li {
-    border-style: solid;
-    border-width: 5px;
-    list-style: none;
     width: 22%;
     display: inline-block;
     float: left;
-    border: 2px gray;
-    margin: 10px 10px 20px;
+    border: 2px gray solid;
     padding: 5px;
+    margin: 20px 15px;
 }
+
+
+/*
+ * ──────────────────────────────────────────────────────── I ──────────
+ *   :::::: H I S T O R I A : :  :   :    :     :        :          :
+ * ──────────────────────────────────────────────────────────────────
  */
 
 #historia {
@@ -175,9 +218,15 @@ header ul a {
     padding: 40px 15px;
 }
 
+
+/*
+ * ────────────────────────────────────────────────────── I ──────────
+ *   :::::: E V E N T O S : :  :   :    :     :        :          :
+ * ────────────────────────────────────────────────────────────────
+ */
+
 #eventos {
     padding-top: 40px;
-    /* border-style: dashed; */
     margin: 5px;
     height: 75vh;
 }
@@ -205,31 +254,34 @@ header ul a {
 }
 
 
-/* seccion inferior */
+/*
+ * ──────────────────────────────────────────────────────────────────────── I ──────────
+ *   :::::: S E C C I O N   I N F E R I O R : :  :   :    :     :        :          :
+ * ──────────────────────────────────────────────────────────────────────────────────
+ */
 
 #contacto {
-    text-align: center;
     padding-top: 5%;
     background-color: black;
     color: white;
-    /* height: 50vh; */
     padding: 15px;
+    margin: auto;
 }
 
 #contacto form {
-    margin-left: 35%;
+    margin: auto;
     width: 30%;
 }
 
-input {
-    margin-top: 5px;
-    margin-bottom: 15px;
+fieldset input,
+textarea {
+    margin: 10px 15px;
 }
 
 button {
     padding: 10px;
     display: block;
-    margin: 10px 45%;
+    margin: 10px;
 }
 
 #contacto a {
