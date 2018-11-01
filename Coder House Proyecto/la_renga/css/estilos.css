@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     list-style: none;
-    z-index: 0;
+    z-index: 1;
 }
 
 
@@ -141,11 +141,12 @@ header ul a {
 
 .menu_1 {
     background-color: black;
-    position: sticky;
+    position: fixed;
     top: 0;
+    float: left;
     text-align: center;
-    z-index: 1;
     width: 100%;
+    z-index: 0;
 }
 
 .menu_1 ul li {
@@ -186,15 +187,19 @@ header ul a {
 
 #integrantes ul {
     margin: 0px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 #integrantes ul li {
+    line-height: 1.5rem;
     width: 22%;
-    display: inline-block;
-    float: left;
+    /* display: inline-block;
+    float: left; */
     border: 2px gray solid;
-    padding: 5px;
-    margin: 20px 15px;
+    padding: 5px 10px;
+    margin: 20px;
 }
 
 
@@ -271,6 +276,10 @@ header ul a {
 #contacto form {
     margin: auto;
     width: 30%;
+}
+
+input {
+    height: 25px;
 }
 
 fieldset input,
