@@ -1,0 +1,25 @@
+#instalacion {
+	padding: $paddingSecciones;
+
+	h2 {
+		@extend %encabezados;
+		color: $colorPrincipal;
+	}
+
+	ol {
+		li {
+			font-size: $tamanioFuenteTexto;
+			line-height: 140%;
+			list-style-type: decimal-leading-zero;
+			margin-left: 25px;
+
+			ol {
+				margin: 15px 0 15px 0;
+
+				 li {
+					 list-style: none;
+				 }
+			}
+		}
+	}
+}

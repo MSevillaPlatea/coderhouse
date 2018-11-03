@@ -1,0 +1,13 @@
+@mixin flex($jc, $ai) {
+	display: flex;
+	justify-content: $jc;
+	align-items: $ai;
+}
+
+@mixin encabezados($ta, $mb, $fs, $tt, $c){
+	text-align: $ta;
+	margin-bottom: $mb;
+	font-size: $fs;
+	text-transform: $tt;
+	color: $c;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sass</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<header>
+		<div class="contenedor">
+			<h1>Sass</h1>
+
+			<!--
+				B: Block.
+				E: Element.
+				M: Modifier.
+			-->
+
+			<nav>
+				<ul class="menu">
+					<li class="menu__item menu__item-negrita"><a href="#">Instalación</a></li>
+					<li class="menu__item"><a href="#">Variables</a></li>
+					<li class="menu__item"><a href="#">Nesting</a></li>
+					<li class="menu__item"><a href="#">Partials</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="instalacion">
+		<div class="contenedor">
+			<h2>Instalación</h2>
+
+			<ol>
+				<li>Instalar node desde <a href="https://nodejs.org/es/" target="_blank">su sitio</a>. Versión LTS.</li>
+				<li>Entrar desde la consola/terminal a la carpeta del proyecto, y ejecutar el comando <strong>npm init</strong></li>
+				<li>Una vez iniciado el proyecto, ejecutar el comando <strong>npm install -D node-sass nodemon</strong> para instalar Sass.</li>
+				<li>Modificar el <em>package.json</em> y luego de "test", agregar una coma y las próximas líneas separadas por una coma:
+					<ol>
+						<li><strong>"build-css": "node-sass --include-path scss scss/style.scss css/main.css"</strong></li>
+						<li><strong>"watch-css": "nodemon -e scss -x \"npm run build-css\""</strong></li>
+					</ol>
+				</li>
+				<li>Modificar las rutas del "build-css" y crear carpetas y archivos necesarios.</li>
+				<li>Ejecutar el comando <strong>npm run watch-css</strong></li>
+			</ol>
+		</div>
+	</section>
+
+	<section id="variables">
+		<div class="contenedor">
+			<h2>Variables</h2>
+
+			<p>Las variables son una manera de guardar información que necesites reutilizar en tus hojas de estilos: colores, dimensiones, fuentes o cualquier otro valor. Sass utiliza el símbolo dólar ($) al principio de la palabra clave para crear una variable.</p>
+
+			<p>Estas variables se comportan como atributos CSS, y su valor puede ser cualquier valor que pudiera adquirir cualquier atributo CSS.</p>
+
+			<p>La idea detrás de todo esto es que luego podamos volver a utilizar los mismos valores de una manera rápida, o si es necesario un cambio, podemos declarar el nuevo valor en un solo lugar (la definición de la variable), en lugar de aplicar el cambio manualmente a todas partes afectadas por la propiedad.</p>
+		</div>
+	</section>
+
+	<section id="nesting">
+		<div class="contenedor">
+			<h2>Nesting</h2>
+
+			<p>HTML sigue una estricta estructura de anidación mientras que CSS, por lo general, es un caos total. Con la anidación de Sass puedes organizar tu hoja de estilo de una manera que se asemeja a la de HTML, lo que reduce la posibilidad de conflictos en el CSS.</p>
+		</div>
+	</section>
+
+	<section id="partials">
+		<div class="contenedor">
+			<h2>Partials</h2>
+
+			<p>Una de las características más útiles de Sass es poder separar tus hojas de estilo en archivos separados. A continuación, puede usar @import para incluir la fuente de sus archivos individuales en una hoja de estilo maestra.</p>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,30 @@
+header {
+	background: $colorPrincipal;
+	padding: 15px 0;
+
+	.contenedor {
+		@include flex(space-between, center);
+		flex-wrap: wrap;
+
+		h1 {
+			color: $blanco;
+			font-size: $tamanioFuenteTitulo;
+		} /* Cierra el h1 */
+
+		nav {
+			.menu {
+				@include flex(center, center);
+
+				.menu__item {
+					margin: 0 10px;
+
+					a {
+						color: $blanco;
+						text-transform: uppercase;
+						font-size: $tamanioFuenteTexto;
+					} /* Cierran los a */
+				} /* Cierran los li */
+			} /* Cierra la ul */
+		} /* Cierra el nav */
+	} /* Cierra el contenedor */
+} /* Cierra el header */
