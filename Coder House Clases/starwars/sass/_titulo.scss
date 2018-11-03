@@ -1,0 +1,6 @@
+#titulo {
+    @include flex(flex-end, center, center);
+    background-image: url(../img/back1.jpg);
+    margin: 20px;
+    height: 100px;
+}

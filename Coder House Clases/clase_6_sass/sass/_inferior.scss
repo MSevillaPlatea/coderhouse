@@ -1,0 +1,9 @@
+#inferior {
+    @include flex(space-between, center);
+    #nesting {
+        @include lado (flex-end);
+    }
+    #partials {
+        @include lado (flex-start);
+    }
+}

@@ -72,3 +72,16 @@ header {
     font-size: 1.8rem;
     line-height: 140%;
     margin-bottom: 20px; }
+
+#inferior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  #inferior #nesting {
+    width: 45%;
+    align-self: flex-end;
+    height: 500px; }
+  #inferior #partials {
+    width: 45%;
+    align-self: flex-start;
+    height: 500px; }
