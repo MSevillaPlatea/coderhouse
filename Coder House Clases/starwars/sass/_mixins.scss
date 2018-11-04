@@ -1,0 +1,34 @@
+@mixin fondoColor ($Bcolor) {
+    background-color: $Bcolor;
+}
+
+@mixin fondoImg($img) {
+    background-image: url($img);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+@mixin fontColor($Fcolor) {
+    color: $Fcolor;
+}
+
+@mixin alto($altura) {
+    height: $altura;
+}
+
+@mixin titulosSecundarios($color) {
+    text-transform: capitalize;
+    font-size: 2rem;
+    background-color: $color;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+@mixin articulo($colorUno, $colorDos, $borderIzq, $borderDer) {
+    border-left-style: $borderIzq;
+    border-right-style: $borderDer;
+    border-left-color: $colorUno;
+    border-right-color: $colorDos;
+    border-width: 5px;
+}

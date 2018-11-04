@@ -13,5 +13,8 @@
   "devDependencies": {
     "node-sass": "^4.9.4",
     "nodemon": "^1.18.5"
+  },
+  "dependencies": {
+    "sass-lint": "^1.12.1"
   }
 }

@@ -1,5 +1,71 @@
-@import 'reset';
-@import 'global';
-@import 'mixin';
-@import 'principal';
-@import 'titulo';
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+
+/* IMPORTADOS */
+
+@import 'mixins';
+@import 'extends';
+
+/* variables */
+
+$colorPrincipal:black;
+$tamanoTitulos:2.5rem;
+
+/* estilos */
+
+body {
+    @include fondoImg('../img/back2.jpeg');
+    @include alto(100vh);
+    padding-top: 30px;
+    #panel {
+        @include fondoColor(white);
+        @extend %centrar;
+        header {
+            @include fondoImg('../img/back1.jpg');
+            @include alto(100px);
+            @extend %flexRow;
+            background-position: top;
+            justify-content: flex-end;
+            h1 {
+                font-size: $tamanoTitulos;
+                @extend %margenPequeno;
+            }
+            .primer_titulo {
+                @include fontColor(white);
+            }
+            .segundo_titulo {
+                @include fontColor(red);
+            }
+        }
+    }
+}
+
+main {
+    margin-top: 15px;
+    @extend %flexRow;
+    justify-content: flex-end;
+    article {
+        padding: 0 15px 15px 15px;
+        width: 33.33%;
+        .personajes {
+            @include titulosSecundarios(red);
+        }
+        .casting {
+            @include titulosSecundarios(blue);
+        }
+        .rodaje {
+            @include titulosSecundarios(green);
+        }
+    }
+    .art_medio {
+        @include articulo(red, green, dotted, dotted)
+    }
+}

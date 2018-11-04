@@ -1,17 +1,15 @@
 #variables {
-	padding: $paddingSecciones;
-	background: $colorPrincipal;
-
-	h2 {
-		@extend %encabezados;
-		color: $blanco;
-		//@include encabezados(right, 100px, 200px, lowercase, green);
-	}
-
-	p {
-		color: $blanco;
-		font-size: $tamanioFuenteTexto;
-		line-height: 140%;
-		margin-bottom: 20px;
-	}
+    padding: $paddingSecciones;
+    background: $colorPrincipal;
+    h2 {
+        @extend %encabezados;
+        color: $blanco;
+        //@include encabezados(right, 100px, 200px, lowercase, green);
+    }
+    p {
+        color: $blanco;
+        font-size: $tamanioFuenteTexto;
+        line-height: 140%;
+        margin-bottom: 20px;
+    }
 }
