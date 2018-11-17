@@ -6,7 +6,7 @@
     <title>La Renga</title>
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="../la_renga/libs/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="libs/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/estilos.css" />
 </head>
 
@@ -167,6 +167,29 @@
         <h2>Contacto</h2>
         <form id="contacto" action="contacto.html">
             <fieldset>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="¿qué queres?"></textarea>
+                    <button type="submit" class="btn btn-dark">Submit</button>
+            </fieldset>
+            </form>
+    </section>
+    <!-- <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="contacto" action="contacto.html">
+            <fieldset>
                 <legend>Dejanos tu comentario</legend>
                 <label>
                     <input type="text" name="nombre" placeholder="tu nombre papá">
@@ -178,8 +201,8 @@
                 <button type="submit" value="enviar">enviar</button>
             </fieldset>
         </form>
-        <h3><a href="#inicio">volver al inicio</a></h3>
-    </section>
+
+    </section> -->
     <!--
      -- ──────────────────────────────────────────────────── I ──────────
      --   :::::: F O O T E R : :  :   :    :     :        :          :

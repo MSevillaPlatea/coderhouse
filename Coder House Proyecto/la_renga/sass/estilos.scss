@@ -31,6 +31,7 @@
 }
 
 @mixin flow($tipo, $horizontal, $vertical) {
+    display: flex;
     flex-flow: $tipo;
     justify-content: $horizontal;
     align-items: $vertical;
@@ -193,17 +194,12 @@ header ul a {
 
 #integrantes img {
     width: 100%;
-    height: 100%;
     border-radius: 50%;
     margin: 15px 1px;
 }
 
 #integrantes ul {
-    margin: 0px auto;
-    @include flow(row wrap, space-evenly, center);
-    /*  display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly; */
+    @include flow(row wrap, center, end);
 }
 
 #integrantes ul li {
@@ -241,7 +237,6 @@ header ul a {
 #eventos {
     padding-top: 40px;
     margin: 5px;
-    height: 75vh;
 }
 
 #eventos img {
@@ -279,7 +274,7 @@ header ul a {
 
 #contacto form {
     margin: auto;
-    width: 30%;
+    width: 60%;
 }
 
 input {
