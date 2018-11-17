@@ -200,9 +200,10 @@ header ul a {
 
 #integrantes ul {
     margin: 0px auto;
-    display: flex;
+    @include flow(row wrap, space-evenly, center);
+    /*  display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
 }
 
 #integrantes ul li {
