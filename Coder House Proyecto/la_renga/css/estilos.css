@@ -1,305 +1,349 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    list-style: none;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none; }
 
+/* @import "extends";
+@import "mixins"; */
+a,
+i {
+  list-style: none;
+  text-decoration: none;
+  color: white; }
+
+a:hover,
+i:hover {
+  list-style: none;
+  text-decoration: none;
+  color: white; }
+
+h2,
+h3 {
+  text-align: center;
+  margin: 20px 5px 15px;
+  text-transform: uppercase; }
+
+header ul li, .menu_barra ul li, .menu_barra a {
+  background-color: black;
+  display: inline-block;
+  margin: 10px 25px 0px 25px;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase; }
+
+header h1, header ul a {
+  font-family: 'Rock Salt', cursive;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase; }
 
 /*
  * ────────────────────────────────────────────────────────────── I ──────────
  *   :::::: A N I M A C I O N E S : :  :   :    :     :        :          :
  * ────────────────────────────────────────────────────────────────────────
  */
-
 @keyframes escalar {
-    0% {
-        transform: scale(1)
-    }
-    50% {
-        transform: scale(1.1)
-    }
-    100% {
-        transform: scale(1)
-    }
-}
-
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.05); }
+  100% {
+    transform: scale(1); } }
 
 /*
  * ────────────────────────────────────────────────────────── I ──────────
  *   :::::: E L E M E N T O S : :  :   :    :     :        :          :
  * ────────────────────────────────────────────────────────────────────
  */
-
-body {
-    width: 100%;
-    margin: auto;
-}
-
-h2,
-h3 {
-    text-align: center;
-    margin: 20px 5px 15px;
-    text-transform: uppercase;
-}
-
-
 /*
  * ──────────────────────────────────────────────────────────── I ──────────
  *   :::::: N A V E G A C I O N : :  :   :    :     :        :          :
  * ──────────────────────────────────────────────────────────────────────
  */
-
 header {
-    background-color: black;
-    background-image: url("../img/estrella.jpg");
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: top center;
-    height: 100vh;
-}
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 100vh;
+  background-image: url("../img/estrella.jpg");
+  background-color: black;
+  background-size: 50%; }
 
 header h1 {
-    font-size: 50px;
-    color: white;
-    font-family: 'Rock Salt', cursive;
-    margin-left: 30px;
-}
-
-header ul {
-    list-style: none;
-    text-align: center;
-}
+  font-size: 2.5em;
+  padding: 40px 0 0 30px;
+  letter-spacing: 5px; }
 
 header ul li {
-    display: inline-block;
-    margin: 15px 15px;
-    transition: all 0.5s;
-}
-
-header ul a {
-    font-family: 'Rock Salt', cursive;
-    font-size: 1em;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-}
+  transition: all 0.5s; }
 
 .escondite_menu {
-    height: 50px;
-    background-color: black;
-    width: 100%;
-    position: relative;
-    top: 0;
-    z-index: 5;
-}
-
+  height: 50px;
+  background-color: black;
+  width: 100%;
+  position: relative;
+  top: 0;
+  z-index: 5; }
 
 /*
  * ──────────────────────────────────────────────────────────────────── I ──────────
  *   :::::: M E N U   P R I N C I P A L : :  :   :    :     :        :          :
  * ──────────────────────────────────────────────────────────────────────────────
  */
-
 .int a {
-    position: absolute;
-    top: 8%;
-    left: 50%;
-}
+  position: absolute;
+  left: 50%;
+  top: 8%; }
 
 .his a {
-    position: absolute;
-    top: 22%;
-    left: 28%;
-}
+  position: absolute;
+  left: 28%;
+  top: 22%; }
 
 .ev a {
-    position: absolute;
-    top: 72%;
-    left: 28%;
-}
+  position: absolute;
+  left: 28%;
+  top: 72%; }
 
 .you a {
-    position: absolute;
-    top: 88%;
-    left: 50%;
-}
+  position: absolute;
+  left: 50%;
+  top: 88%; }
 
 .con a {
-    position: absolute;
-    top: 48%;
-    left: 69%;
-}
-
+  position: absolute;
+  left: 69%;
+  top: 48%; }
 
 /*
  * ────────────────────────────────────────────────────────────────── I ──────────
  *   :::::: M E N U   F L O T A N T E : :  :   :    :     :        :          :
  * ────────────────────────────────────────────────────────────────────────────
  */
-
 .menu_barra {
-    background-color: black;
-    position: sticky;
-    top: 0;
-    text-align: center;
-    width: 100%;
-    float: left;
-    z-index: 2;
-}
+  background-color: black;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  float: left;
+  z-index: 2; }
 
-.menu_barra ul li {
-    background-color: black;
-    display: inline-block;
-    margin: 15px 25px;
-}
-
-.menu_barra ul li:hover {
-    transform: scale(1.1);
-    animation-name: escalar;
-    animation-duration: 0.5s;
-}
+.menu_barra ul li:hover,
+#galeria ul li:hover {
+  animation-name: escalar;
+  animation-duration: 0.2s;
+  animation-timing-function: linear; }
 
 .menu_barra a {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-}
-
+  margin: 0; }
 
 /*
  * ────────────────────────────────────────────────────────────────────── I ──────────
  *   :::::: S E C C I O N   C E N T R A L : :  :   :    :     :        :          :
  * ────────────────────────────────────────────────────────────────────────────────
  */
-
 #integrantes {
-    padding-top: 40px;
-}
+  padding-top: 40px; }
 
 #integrantes img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    margin: 15px 1px;
-}
+  width: 100%;
+  border-radius: 50%;
+  margin: 15px 1px; }
 
 #integrantes ul {
-    margin: 0px auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-}
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: end; }
 
 #integrantes ul li {
-    line-height: 1.5rem;
-    width: 22%;
-    /* display: inline-block;
-    float: left; */
-    border: 2px gray solid;
-    padding: 5px 10px;
-    margin: 20px;
-}
-
+  line-height: 1.5rem;
+  width: 22%;
+  border: 2px gray solid;
+  padding: 5px 10px;
+  margin: 20px; }
 
 /*
  * ──────────────────────────────────────────────────────── I ──────────
  *   :::::: H I S T O R I A : :  :   :    :     :        :          :
  * ──────────────────────────────────────────────────────────────────
  */
-
 #historia {
-    background-image: url("https://i.ytimg.com/vi/UeeG74FDjBw/maxresdefault.jpg");
-    background-size: 100%;
-    height: 100vh;
-    width: 100%;
-    color: white;
-}
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 100vh;
+  background-image: url("https://i.ytimg.com/vi/UeeG74FDjBw/maxresdefault.jpg");
+  background-color: black;
+  color: white; }
 
 .historia_texto {
-    background-color: black;
-    padding: 40px 15px;
-}
-
+  background-color: black;
+  padding: 40px 15px; }
 
 /*
  * ────────────────────────────────────────────────────── I ──────────
- *   :::::: E V E N T O S : :  :   :    :     :        :          :
+ *   :::::: GALERIA : :  :   :    :     :        :          :
  * ────────────────────────────────────────────────────────────────
  */
+#galeria {
+  display: flex;
+  flex-flow: column wrap;
+  padding-top: 40px;
+  width: 100%;
+  align-items: center; }
 
-#eventos {
-    padding-top: 40px;
-    margin: 5px;
-    height: 75vh;
-}
+#galeria li {
+  background-position: center;
+  background-size: cover; }
 
-#eventos img {
-    display: inline-block;
-    width: 300px;
-    margin: 5px;
-}
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: repeat(5, 400px);
+  grid-template-areas: "c1 c2 c3" "c4 c4 c5" "c6 c7 c5" "c8 c8 c9" "c10 c10 c10";
+  grid-gap: 10px; }
 
-#eventos article,
-#eventos ul {
-    text-align: center;
-    width: 48%;
-    display: inline-block;
-}
+.uno {
+  grid-area: c1;
+  background-image: url("https://img.discogs.com/GZQW6hPvwyOiK-414EzcrxOHcOo=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/A-4624485-1505165482-5437.jpeg.jpg"); }
 
-#eventos ul {
-    border-right: 2px;
-}
+.dos {
+  grid-area: c2;
+  background-image: url("https://viapais.com.ar/media/cache/resolve/small/https://viapais.com.ar/files/2018/03/20180322182451_32072893_0_body.jpg"); }
 
-#eventos ul li {
-    background-color: rgb(190, 190, 190);
-    margin: 30px 0px;
-}
+.tres {
+  grid-area: c3;
+  background-image: url("https://http2.mlstatic.com/buzos-de-la-renga-D_NQ_NP_113221-MLA20738998676_052016-F.jpg"); }
 
+.cuatro {
+  grid-area: c4;
+  background-image: url("https://www.vuenosairez.com/images/eventos/la-renga-e-43309.jpg"); }
+
+.cinco {
+  grid-area: c5;
+  background-image: url("http://ciclopecultura.com.ar/wp-content/uploads/2015/01/LaRenga_Rumipal_MCampodonico-02.jpg"); }
+
+.seis {
+  grid-area: c6;
+  background-image: url("https://www.arteinfernal.com/wp-content/uploads/2014/04/01.jpg"); }
+
+.siete {
+  grid-area: c7;
+  background-image: url("https://i1.wp.com/revistasoyrock.com.ar/wp/wp-content/uploads/2017/07/WhatsApp-Image-2017-07-30-at-00.53.14.jpeg?fit=1280%2C852"); }
+
+.ocho {
+  grid-area: c8;
+  background-image: url("https://direct.rhapsody.com/imageserver/images/Alb.57441915/500x500.jpg"); }
+
+.nueve {
+  grid-area: c9;
+  background-image: url("https://static.sanjuan8.com/adjuntos/212/imagenes/021/215/0021215596.jpg"); }
+
+.diez {
+  grid-area: c10;
+  background-image: url("http://radiomarcela.cl/wp-content/uploads/2018/07/La-Renga-Portada.jpg"); }
 
 /*
  * ──────────────────────────────────────────────────────────────────────── I ──────────
  *   :::::: S E C C I O N   I N F E R I O R : :  :   :    :     :        :          :
  * ──────────────────────────────────────────────────────────────────────────────────
  */
+footer {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white; }
 
 #contacto {
-    padding-top: 5%;
-    background-color: black;
-    color: white;
-    padding: 15px;
-    margin: auto;
-}
+  width: 50%;
+  margin: auto; }
 
-#contacto form {
-    margin: auto;
-    width: 30%;
-}
+#contacto textarea {
+  width: 65%; }
 
-input {
-    height: 25px;
-}
+footer a {
+  text-decoration: none;
+  color: white; }
 
-fieldset input,
-textarea {
-    margin: 10px 15px;
-}
+.iconosFondo {
+  margin: 0px 5px;
+  align-self: flex-start; }
 
-button {
-    padding: 10px;
-    display: block;
-    margin: 10px;
-}
+.icono_inf {
+  margin: 0px 10px;
+  font-size: 2em; }
 
-#contacto a {
-    text-decoration: none;
-    color: white;
-}
+.btn_volver {
+  align-self: flex-end;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d65050;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0px 20px; }
 
-footer {
-    background-color: black;
-    text-align: right;
-    padding-right: 15px;
-    color: white;
-}
+.derechos {
+  align-self: flex-end;
+  margin: 0px 10px; }
+
+.form-group-btn {
+  margin-bottom: 0px; }
+
+/*
+ * ──────────────────────────────────────────────────────────────────────── I ──────────
+ *   :::::: MEDIA QUERY : :  :   :    :     :        :          :
+ * ──────────────────────────────────────────────────────────────────────────────────
+ */
+@media screen and (max-width: 1000px) {
+  header {
+    background-image: url("https://k43.kn3.net/taringa/1/1/5/6/8/7/92/sanlorengo/830.jpg?7640");
+    background-size: 50%;
+    background-position: center; }
+  header {
+    height: 70vh; }
+  header h1 {
+    display: none; }
+  body {
+    font-size: 0.5rem; }
+  .int,
+  .his,
+  .ev,
+  .you,
+  .con {
+    margin: 25px;
+    line-height: 25px;
+    position: relative;
+    font-size: 1rem; }
+  .menu_2 nav ul {
+    display: flex;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start; }
+  .menu_barra,
+  header h1,
+  .media_int,
+  .escondite_menu {
+    display: none; }
+  #integrantes ul li {
+    width: 20%;
+    margin: 5px; }
+  /* #galeria {
+                        width: 100%;
+                    } */
+  .grilla {
+    display: grid;
+    grid-template-columns: repeat(2, 100%);
+    grid-template-rows: repeat(5, 100%);
+    grid-template-areas: "c1 c2" "c3 c4" "c5 c6" "c7 c8" "c9 c10";
+    grid-gap: 2px; } }
